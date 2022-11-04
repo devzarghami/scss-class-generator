@@ -1,0 +1,73 @@
+/****************** Properties ******************/
+@include utility($class: "v-bg", $source: "colors", $attribute: "background-color", $mode: (dark:true, hover:true));
+@include utility($class: "v-backdrop", $source: "backdrop", $attribute: "backdrop-filter", $mode: (hover:true));
+@include utility($class: "v-bg-size", $source: "backgroundSize", $attribute: "background-size");
+@include utility($class: "v-opacity", $source: "opacity", $attribute: "opacity", $mode: (dark:true, hover:true));
+@include utility($class: "v-z-index", $source: "zIndex", $attribute: "z-index", $mode: (important:true));
+@include utility($class: "v-whiteSpace", $source: "whiteSpace", $attribute: "white-space", $mode: (important:true));
+@include utility($class: "v-dir", $source: "direction", $attribute: "direction", $mode: (important:true));
+@include utility($class: "v-list-style", $source: "listStyleType", $attribute: "list-style-type");
+@include utility($class: "v-position", $source: "position", $attribute: "position");
+@include utility($class: "v-overflow", $source: "overflow", $attribute: "overflow");
+@include utility($class: "v-cursor", $source: "cursor", $attribute: "cursor");
+@include utility($class: "v-line-height", $source: "lineHeight", $attribute: "line-height");
+@include utility($class: "v-transition", $source: "transition", $attribute: "transition");
+
+/****************** Box Style Properties ******************/
+@include utility($class: "v-shadow", $source: "boxShadow", $attribute: "box-shadow", $mode: (dark:true, hover:true));
+@include utility($class: "v-border", $source: "colors", $attribute: "border-color", $mode: (dark:true, hover:true));
+@include utility($class: "v-border", $source: "borderStyle", $attribute: "border-style", $mode: (responsive:true, dark:true));
+@include utility($class: "v-border-bottom", $source: "borderStyle", $attribute: "border-bottom-style", $mode: (responsive:true, dark:true));
+@include utility($class: "v-border-top", $source: "borderStyle", $attribute: "border-top-style", $mode: (responsive:true, dark:true));
+@include utility($class: "v-border-left", $source: "borderStyle", $attribute: "border-left-style", $mode: (responsive:true, dark:true));
+@include utility($class: "v-border-right", $source: "borderStyle", $attribute: "border-right-style", $mode: (responsive:true, dark:true));
+@include utility($class: "v-border", $source: "borderWidth", $attribute: "border-width");
+@include utility($class: "v-radius", $source: "borderRadius", $attribute: "border-radius");
+@include utility($class: "v-width", $source: "width", $attribute: "width", $mode: (important:true));
+@include utility($class: "v-height", $source: "height", $attribute: "height", $mode: (important:true));
+/****************** Typography Properties ******************/
+@include utility($class: "v-text", $source: "colors", $attribute: "color", $mode: (dark:true, hover:true));
+@include utility($class: "v-text", $source: "textAlign", $attribute: "text-align", $mode: (responsive:true, important:true));
+@include utility($class: "v-text-decoration", $source: "textDecoration", $attribute: "text-decoration", $mode: (important:true));
+@include utility($class: "v-font-size", $source: "fontSize", $attribute: "font-size", $mode: (responsive:true));
+@include utility($class: "v-font-style", $source: "fontStyle", $attribute: "font-style");
+@include utility($class: "v-font-weight", $source: "fontWeight", $attribute: "font-weight");
+
+/****************** Flexbox Properties ******************/
+@include utility($class: "v-d", $source: "display", $attribute: "display", $mode: (responsive:true));
+@include utility($class: "v-flex", $source: "flexDirection", $attribute: "flex-direction", $mode: (responsive:true));
+@include utility($class: "v-flex", $source: "flexWrap", $attribute: "flex-wrap", $mode: (responsive:true));
+@include utility($class: "v-justify-content", $source: "justifyContent", $attribute: "justify-content", $mode: (responsive:true));
+@include utility($class: "v-align-items", $source: "alignItems", $attribute: "align-items", $mode: (responsive:true));
+@include utility($class: "v-align-content", $source: "alignContent", $attribute: "align-content", $mode: (responsive:true));
+@include utility($class: "v-align-self", $source: "alignSelf", $attribute: "align-self", $mode: (responsive:true));
+/****************** Gap Spacer Properties ******************/
+@include utility($class: "v-gap", $source: "spacer", $attribute: "gap", $mode: (responsive:true));
+/****************** Margin Spacer Properties ***************/
+@include utility($class: "v-m", $source: "spacer", $attribute: "margin", $mode: (responsive:true));
+@include utility($class: "v-mt", $source: "spacer", $attribute: "margin-top", $mode: (responsive:true));
+@include utility($class: "v-mb", $source: "spacer", $attribute: "margin-bottom", $mode: (responsive:true));
+@include utility($class: "v-ml", $source: "spacer", $attribute: "margin-left", $mode: (responsive:true, direction:true));
+@include utility($class: "v-mr", $source: "spacer", $attribute: "margin-right", $mode: (responsive:true, direction:true));
+@include utility($class: "v-mx", $source: "spacer", $attribute: ("margin-right", "margin-left"), $mode: (responsive:true));
+@include utility($class: "v-my", $source: "spacer", $attribute: ("margin-top", "margin-bottom"), $mode: (responsive:true));
+/****************** Padding Spacer Properties **************/
+@include utility($class: "v-p", $source: "spacer", $attribute: "padding", $mode: (responsive:true));
+@include utility($class: "v-pt", $source: "spacer", $attribute: "padding-top", $mode: (responsive:true));
+@include utility($class: "v-pb", $source: "spacer", $attribute: "padding-bottom", $mode: (responsive:true));
+@include utility($class: "v-pl", $source: "spacer", $attribute: "padding-left", $mode: (responsive:true, direction:true));
+@include utility($class: "v-pr", $source: "spacer", $attribute: "padding-right", $mode: (responsive:true, direction:true));
+@include utility($class: "v-px", $source: "spacer", $attribute: ("padding-right", "padding-left"), $mode: (responsive:true));
+@include utility($class: "v-py", $source: "spacer", $attribute: ("padding-top", "padding-bottom"), $mode: (responsive:true));
+/****************** full Responsive Grid System *************/
+@include utility($class: "v-container", $source: "container", $attribute: "max-width", $mode: (responsive:true));
+@include utility($class: "v-grid-cols", $source: "gridCols", $attribute: "grid-template-columns", $mode: (responsive:true));
+@include utility($class: "v-col-span", $source: "gridColSpan", $attribute: "grid-column", $mode: (responsive:true));
+@include utility($class: "v-col-start", $source: "gridColStartEnd", $attribute: "grid-column-start", $mode: (responsive:true));
+@include utility($class: "v-col-end", $source: "gridColStartEnd", $attribute: "grid-column-end", $mode: (responsive:true));
+@include utility($class: "v-grid-rows", $source: "gridRows", $attribute: "grid-template-rows", $mode: (responsive:true));
+@include utility($class: "v-row-span", $source: "gridRowSpan", $attribute: "grid-row", $mode: (responsive:true));
+@include utility($class: "v-row-start", $source: "gridRowStartEnd", $attribute: "grid-row-start", $mode: (responsive:true));
+@include utility($class: "v-row-end", $source: "gridRowStartEnd", $attribute: "grid-row-end", $mode: (responsive:true));
+@include utility($class: "v-grid-flow", $source: "gridFlow", $attribute: "grid-auto-flow", $mode: (responsive:true));
+@include utility($class: "v-order", $source: "orders", $attribute: "order", $mode: (responsive:true));

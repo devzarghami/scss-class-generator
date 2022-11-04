@@ -1,0 +1,81 @@
+
+
+@mixin modifiers($map, $attribute, $pseudo:"" , $important, $prefix: "-", $separator: "-", $base: "") {
+  @each $key, $value in $map {
+    @if $value and not($value == ()) {
+      &#{if($key != $base, #{$prefix}#{$key}, '')}#{if(type-of($value) != "map",'#{$pseudo}','')} {
+        @if type-of($value) == "map" and length($value) {
+          @include modifiers($value, $attribute, $pseudo, $important, $prefix, $separator, $base);
+        } @else {
+          @each $property in $attribute {
+            #{$property}: #{if($important == true,#{$value} !important , #{$value})};
+          }
+        }
+      }
+    }
+  }
+}
+
+@function get-color( $color, $shade: 'base', $map : map-get($variables , colors) ) {
+  // check color exists
+  @if (map-has-key($map, $color)) {
+    $value: map-get($map, unquote($color));
+    // check if color or map
+    @if type-of($value) == color {
+      // return color
+      @return $value;
+    }
+    // check shade of color exists
+    @if (map-has-key($value, $shade)) {
+      // return shade of color
+      @return map-get($value, $shade);
+    }
+  }
+  // else do nothing
+  @return null;
+}
+
+@mixin utility($class, $source, $attribute, $mode:(dark:false, hover:false, responsive:false, important:false, direction:false), $variables: $variables) {
+  .#{$class} {
+    @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+  }
+
+  @if (map-get($mode, hover)) {
+    .hover\:#{$class} {
+      @include modifiers(map-get($variables, $source), $attribute, $pseudo: ':hover', $important: map-get($mode, important));
+    }
+  }
+
+  @if (map-get($mode, dark)) {
+    .dark .dark\:#{$class} {
+      @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+    }
+  }
+
+  @if (map-get($mode, dark) and map-get($mode, hover)) {
+    .dark .dark\:hover\:#{$class} {
+      @include modifiers(map-get($variables, $source), $attribute, $pseudo: ':hover', $important: map-get($mode, important));
+    }
+  }
+
+  @if (map-get($mode, direction)) {
+    .rtl .rtl\:#{$class} {
+      @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+    }
+    .ltr .ltr\:#{$class} {
+      @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+    }
+  }
+
+  @if (map-get($mode, responsive)) {
+    @each $name, $key in map-get($variables, responsive) {
+      @media screen and (#{$key}) {
+        .#{$name}\:#{$class} {
+          @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+        }
+      }
+    }
+  }
+
+
+}
