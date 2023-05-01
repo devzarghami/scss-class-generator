@@ -16,25 +16,6 @@
   }
 }
 
-@function get-color( $color, $shade: 'base', $map : map-get($variables , colors) ) {
-  // check color exists
-  @if (map-has-key($map, $color)) {
-    $value: map-get($map, unquote($color));
-    // check if color or map
-    @if type-of($value) == color {
-      // return color
-      @return $value;
-    }
-    // check shade of color exists
-    @if (map-has-key($value, $shade)) {
-      // return shade of color
-      @return map-get($value, $shade);
-    }
-  }
-  // else do nothing
-  @return null;
-}
-
 @mixin utility($class, $source, $attribute, $mode:(dark:false, hover:false, responsive:false, important:false, direction:false), $variables: $variables) {
   .#{$class} {
     @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
