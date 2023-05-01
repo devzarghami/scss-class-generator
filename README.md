@@ -23,7 +23,7 @@ A comparison of CSS library sizes
 
 | Name                   | Version | Size (uncompressed) | Size (minified) | URL                                                   |
 |------------------------|---------|---------------------|-----------------|-------------------------------------------------------|
-| Hamtapay design system | v1.0.0  | 230 KB              | 130 KB          | https://github.com/devzarghami/scss-class-generator                               |
+| scss-class-generator   | v1.0.0  | 230 KB              | 130 KB          | https://github.com/devzarghami/scss-class-generator                               |
 | Tailwindcss            | v1.0.0  | 2413.4 kB	         | 1967.4 kB	   | https://v1.tailwindcss.com/docs/controlling-file-size |
 | Bootstrap              | v4.0.0  | 187 KB              | 147 KB          | https://v4-alpha.getbootstrap.com/                    |
 
