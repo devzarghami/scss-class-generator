@@ -17,16 +17,6 @@ Dont want to be one of those websites that blinds people when they open it on th
 - Atiex Fiat & Crypto Exchange (https://atiex.uk)
 - Hamtapay Crypto Currency Exchange (https://hamtapay.net)
 
-## Css Comparison
-
-A comparison of CSS library sizes
-
-| Name                   | Version | Size (uncompressed) | Size (minified) | URL                                                   |
-|------------------------|---------|---------------------|-----------------|-------------------------------------------------------|
-| scss-class-generator   | v1.0.0  | 230 KB              | 130 KB          | https://github.com/devzarghami/scss-class-generator                               |
-| Tailwindcss            | v1.0.0  | 2413.4 kB	         | 1967.4 kB	   | https://v1.tailwindcss.com/docs/controlling-file-size |
-| Bootstrap              | v4.0.0  | 187 KB              | 147 KB          | https://v4-alpha.getbootstrap.com/                    |
-
 ## Online Scss to Css Compiler Website
 - https://jsonformatter.org/scss-to-css
 - https://www.cssportal.com/scss-to-css
