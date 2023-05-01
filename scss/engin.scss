@@ -1,6 +1,4 @@
-
-
-@mixin modifiers($map, $attribute, $pseudo:"" , $important, $prefix: "-", $separator: "-", $base: "") {
+@mixin modifiers($map, $attribute, $pseudo:"" , $important:false, $prefix: "-", $separator: "-", $base: "") {
   @each $key, $value in $map {
     @if $value and not($value == ()) {
       &#{if($key != $base, #{$prefix}#{$key}, '')}#{if(type-of($value) != "map",'#{$pseudo}','')} {
@@ -16,35 +14,43 @@
   }
 }
 
-@mixin utility($class, $source, $attribute, $mode:(dark:false, hover:false, responsive:false, important:false, direction:false), $variables: $variables) {
+@mixin utility($class, $source, $attribute, $mode:(dark:true, hover:true, group-hover:true, responsive:true, direction:true), $variables: $defaultVariables) {
+  /* simple class */
   .#{$class} {
-    @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+    @include modifiers(map-get($variables, $source), $attribute);
   }
-
+  /* hover pseudo class */
   @if (map-get($mode, hover)) {
     .hover\:#{$class} {
-      @include modifiers(map-get($variables, $source), $attribute, $pseudo: ':hover', $important: map-get($mode, important));
+      @include modifiers(map-get($variables, $source), $attribute, $pseudo: ':hover', $important: true);
     }
   }
 
+  /* group hover pseudo class */
+  @if (map-get($mode, group-hover)) {
+    .group:hover .group-hover\:#{$class} {
+      @include modifiers(map-get($variables, $source), $attribute, $important: true);
+    }
+  }
+  /* dark class */
   @if (map-get($mode, dark)) {
     .dark .dark\:#{$class} {
-      @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+      @include modifiers(map-get($variables, $source), $attribute);
     }
   }
 
   @if (map-get($mode, dark) and map-get($mode, hover)) {
     .dark .dark\:hover\:#{$class} {
-      @include modifiers(map-get($variables, $source), $attribute, $pseudo: ':hover', $important: map-get($mode, important));
+      @include modifiers(map-get($variables, $source), $attribute, $pseudo: ':hover', $important: true);
     }
   }
 
   @if (map-get($mode, direction)) {
     .rtl .rtl\:#{$class} {
-      @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+      @include modifiers(map-get($variables, $source), $attribute);
     }
     .ltr .ltr\:#{$class} {
-      @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+      @include modifiers(map-get($variables, $source), $attribute);
     }
   }
 
@@ -52,11 +58,9 @@
     @each $name, $key in map-get($variables, responsive) {
       @media screen and (#{$key}) {
         .#{$name}\:#{$class} {
-          @include modifiers(map-get($variables, $source), $attribute, $important: map-get($mode, important));
+          @include modifiers(map-get($variables, $source), $attribute);
         }
       }
     }
   }
-
-
 }
