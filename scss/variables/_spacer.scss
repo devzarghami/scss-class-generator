@@ -1,0 +1,8 @@
+@import "../config";
+
+$spacer: (
+        auto:auto,
+);
+@for $i from 0 through $spacerCount {
+  $spacer: map-merge($spacer, (#{$i}:#{$i * 0.25rem}));
+}

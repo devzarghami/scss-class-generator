@@ -1,0 +1,29 @@
+@import "../config";
+
+$colors: map-merge($colors, (
+        unset : unset,
+        none:none,
+        transparent: transparent,
+        black: #000,
+        white: #fff,
+));
+
+
+// Output the palette map.
+
+@each $name, $value in $baseColors {
+  $shades: ();
+  $glass: ();
+  @each $i in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+
+    // Calculate the alpha value based on the iteration.
+    $percentage: $i / 1000 * 100;
+
+    // Calculate the shade color by blending the base color with white.
+    $shadeColor: darken($value, $percentage);
+
+    // Add the shade and its corresponding color to the palette map.
+    $shades: map-merge($shades, (#{$i}: $shadeColor));
+  }
+  $colors: map-merge($colors, ($name:$shades))
+}

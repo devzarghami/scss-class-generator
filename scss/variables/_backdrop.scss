@@ -1,0 +1,10 @@
+@import "../config";
+
+$backdropBlur: (
+        0: none,
+);
+@for $i from 1 through $backdropBlurCount {
+  @if $i % 2 == 0 {
+    $backdropBlur: map-merge($backdropBlur, (#{$i}: blur(#{$i}px)));
+  }
+}

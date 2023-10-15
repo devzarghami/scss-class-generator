@@ -1,0 +1,26 @@
+@import "../config";
+
+$borderWidth: (
+        0: 0,
+        1: 1px,
+        2: 2px,
+        3: 3px,
+        4: 4px,
+        5: 5px,
+);
+
+$borderStyle: (
+        dotted: dotted,
+        dashed: dashed,
+        solid: solid,
+        none: none,
+);
+
+$borderRadius: (
+        full: 100%,
+);
+@for $i from 1 through $borderRadiusCount {
+  @if $i % 2 == 0 {
+    $borderRadius: map-merge($borderRadius, (#{$i}:#{$i}px));
+  }
+}

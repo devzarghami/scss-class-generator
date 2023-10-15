@@ -1,0 +1,27 @@
+$spacerCount: 24;
+$gridCount: 12;
+$zIndexCount: 10;
+$fontSizeCount: 60;
+$gridSystemCount: 12;
+$borderRadiusCount: 24;
+$backdropBlurCount: 10;
+
+$baseColors: (
+        gray: #f9fafb,
+        red: #fef2f2,
+        orange: #fff7ed,
+        yellow: #fefce8,
+        green: #f0fdf4,
+        teal: #f0fdfa,
+        blue: #eff6ff,
+        indigo: #eef2ff,
+        purple: #faf5ff,
+        pink: #fdf2f8,
+        rose: #fff1f2
+);
+
+$colors: (
+        slate:(
+                500:#64748b
+        )
+) !default;

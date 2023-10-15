@@ -1,0 +1,51 @@
+$display: (
+        inline:inline,
+        inline-block:inline-block,
+        block:block,
+        flex:flex,
+        grid:grid,
+        inline-flex:inline-flex,
+        none:none
+);
+$flexDirection: (
+        row:row,
+        column:column,
+        row-reverse:row-reverse,
+        column-reverse:column-reverse
+);
+$flexWrap: (
+        wrap:wrap,
+        nowrap:nowrap,
+        wrap-reverse:wrap-reverse
+);
+$justifyContent: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: space-between,
+        around: space-around,
+        evenly: space-evenly,
+);
+$alignItems: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+);
+$alignContent: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: space-between,
+        around: space-around,
+        stretch: stretch,
+);
+$alignSelf: (
+        auto: auto,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+);

@@ -1,0 +1,8 @@
+@import "../config";
+
+$zIndex: (
+        auto: auto
+);
+@for $i from 0 through $zIndexCount {
+  $zIndex: map-merge($zIndex, (#{$i}:#{$i * 10}));
+}

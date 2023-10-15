@@ -1,0 +1,29 @@
+@import "../config";
+
+$gridFlow: (
+        row:row,
+        col:column,
+        dense:dense,
+        row-dense:row dense,
+        col-dense:column dense,
+);
+$grid: (
+        none:none
+);
+$gridSpan: (
+        auto:auto,
+        full: '1 / -1',
+);
+$gridStartEnd: (
+        auto:auto
+);
+$orders: (
+        unset:unset
+);
+
+@for $i from 1 through $gridCount {
+  $orders: append($orders, $i);
+  $gridStartEnd: append($gridStartEnd, $i);
+  $gridSpan: map-merge($gridSpan, (#{$i}: 'span #{$i} / span #{$i}'));
+  $grid: map-merge($grid, (#{$i}: repeat(#{$i}, minmax(0, 1fr))));
+}

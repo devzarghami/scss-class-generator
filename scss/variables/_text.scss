@@ -1,0 +1,60 @@
+@import "../config";
+
+$textAlign: (
+        left: left,
+        right: right,
+        center: center,
+        justify: justify,
+        start: start,
+        end: end
+);
+
+$textDecoration: (
+        none:none,
+        underline:underline
+);
+
+$textTransform: (
+        lowercase:lowercase,
+        uppercase:uppercase,
+        capitalize:capitalize
+);
+
+$whiteSpace: (
+        nowrap:nowrap,
+        wrap:wrap
+);
+
+$listStyleType: (
+        none: none,
+        disc: disc,
+        decimal: decimal
+);
+
+$lineHeight: (
+        none: 0,
+        tight: 1,
+        snug: 1.25,
+        normal: 1.5,
+        relaxed: 1.75,
+        loose: 2
+);
+
+
+$fontSize: ();
+@for $i from 10 through $fontSizeCount {
+  @if $i % 2 == 0 {
+    $fontSize: append($fontSize, $i);
+  }
+}
+
+$fontWeight: ();
+@for $i from 1 through 9 {
+  $fontWeight: append($fontWeight, #{$i * 100});
+}
+
+
+$fontStyle: (
+        italic:italic,
+        normal:normal
+);
