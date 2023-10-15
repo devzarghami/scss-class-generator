@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b44dda1d-ee1c-4acc-a95b-7b8108e6caf3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scss-class-generator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/config.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/engin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/engin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/properties.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/properties.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/properties.scss" beforeDir="false" afterPath="$PROJECT_DIR$/properties.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_backdrop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_backdrop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_background-sizes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_background-sizes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_borders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_borders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_box-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_box-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_cursor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_cursor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_direction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_direction.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_flex-system.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_flex-system.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_grid-system.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_grid-system.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_opacity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_opacity.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_overflow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_overflow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_position.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_position.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_sizes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_sizes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_spacer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_spacer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/variables/_z-index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/variables/_z-index.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2Wn55aEUbUGn4HLrsZLQDbJPg2g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/sorena/Projects/packages/scss-class-generator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/scss" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b44dda1d-ee1c-4acc-a95b-7b8108e6caf3" name="Changes" comment="" />
+      <created>1697355321737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697355321737</updated>
+      <workItem from="1697355322847" duration="12583000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
