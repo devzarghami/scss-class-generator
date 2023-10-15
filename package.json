@@ -1,0 +1,25 @@
+{
+  "name": "vui-css-utility",
+  "version": "1.0.0",
+  "description": "Versatile Utility Classes for SCSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devzarghami/scss-class-generator.git"
+  },
+  "keywords": [
+    "scss",
+    "vui",
+    "scss",
+    "class",
+    "generator"
+  ],
+  "author": "dev.zarghami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devzarghami/scss-class-generator/issues"
+  },
+  "homepage": "https://github.com/devzarghami/scss-class-generator#readme"
+}

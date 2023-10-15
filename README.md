@@ -21,13 +21,13 @@ VUI is a powerful utility class generator for SCSS that empowers developers to c
 You can install VUI via npm:
 
 ```bash
-npm install vui-scss
+npm install vui-css-utility
 ```
 
 Or yarn:
 
 ```bash
-yarn add vui-scss
+yarn add vui-css-utility
 ```
 
 Once installed, you can include the SCSS files in your project to start using VUI utility classes.
