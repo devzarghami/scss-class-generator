@@ -1,5 +1,3 @@
-Certainly, here's a rewritten README file for your SCSS utility package named "VUI":
-
 # VUI - Versatile Utility Classes for SCSS
 
 VUI is a powerful utility class generator for SCSS that empowers developers to create and maintain consistent design systems with ease. With VUI, you can simplify your stylesheets by using utility classes that cover a wide range of design properties, including colors, spacing, typography, shadows, and more. This package is designed to combine the simplicity of Bootstrap with the flexibility of Tailwind CSS, offering a versatile solution for building stylish and responsive web interfaces.
